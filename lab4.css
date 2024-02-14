@@ -1,60 +1,60 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #1e801e; 
-    margin: 0;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #1e801e; 
+  margin: 0;
+}
 
-  body:hover {
-    background-color: #166314; 
-  }
+body:hover {
+  background-color: #166314; 
+}
+
+.pikachu {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-color: #FFD93F;
+  border-radius: 50%;
+}
   
-  .pikachu {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    background-color: #FFD93F;
-    border-radius: 50%;
-  }
+.ear {
+  position: fixed;
+  width: 15%;
+  height: 30%; 
+  background-color: #FFD93F;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  top: 13%;
+}
+
+.ear::after {
+  content: '';
+  position: fixed; 
+  width: 100%; 
+  height: 20%; 
+  background-color: #000000;
+  top: 0; 
+}
   
-  .ear {
-    position: fixed;
-    width: 15%;
-    height: 30%; 
-    background-color: #FFD93F;
-    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-    top: 13%;
-  }
-  
-  .ear::after {
-    content: '';
-    position: fixed; 
-    width: 100%; 
-    height: 20%; 
-    background-color: #000000;
-    top: 0; 
-  }
-  
-  .ear.left {
-    left: 25%;
-    transform: rotate(-45deg);
-  }
-  
-  .ear.right {
-    right: 25%;
-    transform: rotate(45deg);
-  }
-  
-  .eye {
-    position: fixed;
-    width: 8%;
-    height: 8%;
-    background-color: #3D0C02;
-    border-radius: 50%;
-    top: 40%;
-  }
+.ear.left {
+  left: 25%;
+  transform: rotate(-45deg);
+}
+
+.ear.right {
+  right: 25%;
+  transform: rotate(45deg);
+}
+
+.eye {
+  position: fixed;
+  width: 8%;
+  height: 8%;
+  background-color: #3D0C02; 
+  border-radius: 50%;
+  top: 40%;
+}
   
   .eye.left {
     left: 41%;
@@ -76,18 +76,22 @@ body {
   
   .eye.left {
     left: 41%;
-  }
-  
-  .eye.right {
+}
+
+.eye.right {
     right: 41%;
-  }
+}
+
+.cheek + .cheek { 
+  background-color: #FFC0CB; 
+}
   
   
   .cheek {
     position: fixed;
     width: 2%;
     height: 3%;
-    background-color: #EE4B2B;
+    background-color: #FFC0CB;
     border-radius: 50%;
     bottom: 45%;
   }
@@ -110,7 +114,7 @@ body {
     left: 49%;
     border: 2px solid #000000;
     animation: mouthAnimation 2s infinite; 
-  }
+}
   
   
   .nose {
@@ -135,3 +139,18 @@ body {
     }
   }
   
+
+  .nose ~ .mouth { 
+    animation-duration: 3s; 
+}
+
+@keyframes mouthAnimation {
+    0%, 100% {
+        width: 2%;
+        height: 1%; 
+    }
+    50% {
+        width: 3%; 
+        height: 2%; 
+    }
+}
