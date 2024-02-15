@@ -21,43 +21,43 @@ body:hover {
   
 .ear {
   position: fixed;
-  width: 15%;
-  height: 30%; 
+  width: 10%;
+  height: 26%; 
   background-color: #FFD93F;
   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-  top: 13%;
+  top: 20%;
 }
 
 .ear::after {
   content: '';
   position: fixed; 
   width: 100%; 
-  height: 20%; 
+  height: 15%; 
   background-color: #000000;
   top: 0; 
 }
   
 .ear.left {
-  left: 25%;
-  transform: rotate(-45deg);
+  left: 35%;
+  transform: rotate(-50deg);
 }
 
 .ear.right {
-  right: 25%;
-  transform: rotate(45deg);
+  right: 35%;
+  transform: rotate(50deg);
 }
 
 .eye {
   position: fixed;
-  width: 8%;
-  height: 8%;
+  width: 6%;
+  height: 6%;
   background-color: #3D0C02; 
   border-radius: 50%;
   top: 40%;
 }
   
   .eye.left {
-    left: 41%;
+    left: 44%;
   }
   
   .eye.right {
@@ -66,8 +66,8 @@ body:hover {
   
   .eye {
     position: fixed;
-    width: 8%;
-    height: 8%;
+    width: 6%;
+    height: 6%;
     background-color: #3D0C02; 
     border-radius: 50%;
     background-image: radial-gradient(circle at 20% 20%, #FFFFFF, transparent 40%), radial-gradient(circle at 50% 50%, #FFFFFF, transparent 30%);
@@ -75,11 +75,11 @@ body:hover {
   }
   
   .eye.left {
-    left: 41%;
+    left: 44%;
 }
 
 .eye.right {
-    right: 41%;
+    right: 44%;
 }
 
 .cheek + .cheek { 
@@ -97,11 +97,11 @@ body:hover {
   }
   
   .cheek.left {
-    left: 40%;
+    left: 55%;
   }
   
   .cheek.right {
-    right: 40%;
+    right: 55%;
   }
   
   .mouth {
